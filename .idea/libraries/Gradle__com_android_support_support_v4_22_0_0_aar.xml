@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:support-v4:22.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b07fba047f2622d9275cbdda126a30a2/support-v4-22.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b07fba047f2622d9275cbdda126a30a2/support-v4-22.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b07fba047f2622d9275cbdda126a30a2/support-v4-22.0.0/jars/libs/internal_impl-22.0.0.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b07fba047f2622d9275cbdda126a30a2/support-v4-22.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-v4/22.0.0/b3ba18110e0fc56ef11e4bf33632e9cc5c1c43e5/support-v4-22.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-v4/22.0.0/dd094fe480a5e2a2776cbd8402b1a02fb3cab411/support-v4-22.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
