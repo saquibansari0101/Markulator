@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/headerLayout"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="16dp" android:paddingRight="8dp"
+            android:text="Student #"
+            android:textStyle="bold"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="8dp" android:paddingRight="8dp"
+            android:text="First name"
+            android:textStyle="bold"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="8dp" android:paddingRight="16dp"
+            android:text="Last name"
+            android:textStyle="bold"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/buttonsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button android:id="@+id/infoButton"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="\?"
+            />
+        <Button android:id="@+id/summaryButton"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Summary"
+            />
+        <Button android:id="@+id/addStudentRecordButton"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Add Student"/>
+    </LinearLayout>
+    <ListView android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/headerLayout"
+        android:layout_above="@id/buttonsLayout"
+        android:headerDividersEnabled="true" />
+</RelativeLayout>
