@@ -1,4 +1,4 @@
-# Student-Marks-App
+# Markulator AKA Student-Marks-App
 
 ## What I wanted to do
 
