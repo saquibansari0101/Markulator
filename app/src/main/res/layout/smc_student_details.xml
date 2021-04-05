@@ -36,7 +36,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right"
-                    android:inputType="numberDecimal"
+                    android:inputType="number"
                     android:ems="10"
                     android:id="@+id/labMark"
                     android:selectAllOnFocus="true"/>
@@ -58,7 +58,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right"
-                    android:inputType="numberDecimal"
+                    android:inputType="number"
                     android:ems="10"
                     android:id="@+id/midtermMark"
                     android:selectAllOnFocus="true"/>
@@ -80,7 +80,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right"
-                    android:inputType="numberDecimal"
+                    android:inputType="number"
                     android:ems="10"
                     android:id="@+id/finalExamMark"
                     android:selectAllOnFocus="true"/>

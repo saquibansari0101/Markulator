@@ -8,6 +8,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
+import android.text.InputFilter;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +20,6 @@ import android.widget.TextView;
 import com.example.studentmarkscalculator.integration.R;
 
 import java.text.DecimalFormat;
-
 
 /**
  * A Fragment that displays a student's marks and allows the user to edit them.
@@ -116,8 +116,11 @@ public class StudentDetailsFragment extends Fragment implements View.OnClickList
         saveMarksButton.setOnClickListener(this);
 
         labMarkField = (EditText) v.findViewById(R.id.labMark);
+        labMarkField.setFilters(new InputFilter[]{new InputFilterMinMax("0", "30")});
         midtermMarkField = (EditText) v.findViewById(R.id.midtermMark);
+        midtermMarkField.setFilters(new InputFilter[]{new InputFilterMinMax("0","30")});
         finalExamMarkField = (EditText) v.findViewById(R.id.finalExamMark);
+        finalExamMarkField.setFilters(new InputFilter[]{new InputFilterMinMax("0","40")});
         overallMarkField = (TextView) v.findViewById(R.id.overallMark);
 
         MarkTextWatcher markTextWatcher = new MarkTextWatcher();

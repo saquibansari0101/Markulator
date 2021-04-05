@@ -7,7 +7,6 @@ import android.view.MenuItem;
 
 import com.example.studentmarkscalculator.integration.R;
 
-
 /**
  * An Activity with an action bar at the top that lets the user switch between sub-applications.
  */

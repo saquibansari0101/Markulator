@@ -6,12 +6,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.studentmarkscalculator.integration.R;
 
 import java.text.DecimalFormat;
-
 
 /**
  * A Fragment that displays teh average marks of all students.
@@ -29,7 +29,14 @@ public class StudentsSummaryFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
+        View v = inflater.inflate(R.layout.smc_student_details, container, false);
+//        Button deleteAllRecordButton = (Button) v.findViewById(R.id.deleteAllRecordButton);
+//        deleteAllRecordButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Jesus(view);
+//            }
+//        });
         return inflater.inflate(R.layout.smc_students_summary, container, false);
     }
 
@@ -61,4 +68,11 @@ public class StudentsSummaryFragment extends Fragment {
 
     }
 
+
+
+    public void Jesus(View v){
+                ((StudentMarksCalculatorActivity) getActivity()).getDbHelper().deleteAllMarks();
+                ((StudentMarksCalculatorActivity) getActivity()).getDbHelper().deleteAllStudents();
+                getFragmentManager().popBackStackImmediate();
+    }
 }

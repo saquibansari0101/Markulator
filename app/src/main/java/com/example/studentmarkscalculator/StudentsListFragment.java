@@ -19,7 +19,6 @@ import android.widget.TextView;
 
 import com.example.studentmarkscalculator.integration.R;
 
-
 /**
  * Fragment that displays a list of student records.
  * @author SaquibAnsari0101
@@ -226,7 +225,7 @@ public class StudentsListFragment extends ListFragment implements View.OnClickLi
     private void openInfoDialog() {
         new AlertDialog.Builder(getActivity())
                 .setTitle("Info")
-                .setMessage("Welcome to the student marks calculator by Mathew Poff! Here you " +
+                .setMessage("Welcome to the student marks calculator by Saquib Ansari, Vrushabh Nikam, Rutuja Shinde, Rutuja Rane! Here you " +
                         "can see a list of students whose marks can be recorded." +
                         "\n\n-Click on a student's list entry to view and edit their marks " +
                         "(bonus points are allowed) or remove their record." +
@@ -241,9 +240,6 @@ public class StudentsListFragment extends ListFragment implements View.OnClickLi
                 .show();
     }
 
-    /* Code modified from function HeadlinesFragment.displayListView() obtained from
-     * https://blackboard.algonquincollege.com/bbcswebdav/pid-961589-dt-content-rid-1901290_1/xid-1901290_1?target=blank
-     */
     /**
      * Sets up the student list with students from the database.
      */

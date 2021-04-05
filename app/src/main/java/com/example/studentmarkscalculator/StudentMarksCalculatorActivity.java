@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentTransaction;
 import com.example.studentmarkscalculator.NavigationActionBarActivity;
 import com.example.studentmarkscalculator.integration.R;
 
+
 /**
  * Main Activity for the student marks calculator sub-application.
  * @author SaquibAnsari0101

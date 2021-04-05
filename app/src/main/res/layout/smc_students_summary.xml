@@ -5,7 +5,7 @@
 
     <LinearLayout
         android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="match_parent" android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
             android:paddingRight="16dp"
             android:paddingTop="30dp"
             android:paddingBottom="30dp"
-            android:text="Summary" android:textSize="18.0sp"
+            android:text="@string/summary" android:textSize="18.0sp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -29,12 +29,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Average lab mark out of 30: "/>
+                android:text="@string/average_lab_mark_out_of_30"/>
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:gravity="right"
+                android:gravity="end"
                 android:id="@+id/averageLabMark" />
         </LinearLayout>
 
@@ -50,12 +50,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Average midterm mark out of 30:"/>
+                android:text="@string/average_midterm_mark_out_of_30"/>
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:gravity="right"
+                android:gravity="end"
                 android:id="@+id/averageMidtermMark" />
         </LinearLayout>
 
@@ -71,12 +71,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Average final exam mark out of 40: "/>
+                android:text="@string/average_final_exam_mark_out_of_40"/>
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:gravity="right"
+                android:gravity="end"
                 android:id="@+id/averageFinalExamMark" />
         </LinearLayout>
 
@@ -92,14 +92,28 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Average overall mark:"/>
+                android:text="@string/average_overall_mark"/>
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:gravity="right"
+                android:gravity="end"
                 android:id="@+id/averageOverallMark" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <Button
+                android:id="@+id/deleteAllRecordButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/delete_all_record" />
+
+
     </LinearLayout>
+
+
 </ScrollView>

@@ -9,38 +9,35 @@
 
         <TextView
             android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="Student Number"
+            android:text="@string/student_number"
             android:paddingTop="30dp" />
 
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/studentNumber"
-            android:editable="true"
             android:inputType="number"/>
 
         <TextView
             android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="First Name"
+            android:text="@string/first_name"
             android:paddingTop="30dp" />
 
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/firstName"
-            android:editable="true"
             android:inputType="textPersonName|textCapSentences" />
 
         <TextView
             android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="Last Name"
+            android:text="@string/last_name"
             android:paddingTop="30dp" />
 
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/lastName"
-            android:editable="true"
             android:inputType="textPersonName|textCapSentences" />
     </LinearLayout>
 </ScrollView>

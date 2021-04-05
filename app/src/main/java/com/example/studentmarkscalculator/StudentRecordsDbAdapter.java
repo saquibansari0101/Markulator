@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-/* Code modified from class CountriesDbAdapter obtained from https://blackboard.algonquincollege.com/bbcswebdav/pid-961589-dt-content-rid-1901290_1/xid-1901290_1?target=blank */
 
 /**
  * Database adapter for interacting with an SQLite database.
@@ -137,50 +136,50 @@ public class StudentRecordsDbAdapter {
      */
     public static final String INSERT_SAMPLE_STUDENTS =
             "INSERT INTO "+SQLITE_STUDENT_TABLE+" ("+STUDENT_ID+","+STUDENT_FIRSTNAME+","+STUDENT_LASTNAME+") VALUES "
-                    + "(123123001,'Carl','Wallace'),"
-                    + "(123123002,'Tracey','Vance'),"
-                    + "(123123003,'Karen','Walsh'),"
-                    + "(123123004,'Lucas','Ince'),"
-                    + "(123123005,'Gavin','Dowd'),"
-                    + "(123123006,'Carl','Paige'),"
-                    + "(123123007,'Matt','Wilkins'),"
-                    + "(123123008,'Gabrielle','Jackson'),"
-                    + "(123123009,'William','Cameron'),"
-                    + "(123123010,'Stephanie','Underwood'),"
-                    + "(123123011,'Blake','May'),"
-                    + "(123123012,'Jasmine','Mitchell'),"
-                    + "(123123013,'Heather','Black'),"
-                    + "(123123014,'Emma','Graham'),"
-                    + "(123123016,'Cameron','Underwood'),"
-                    + "(123123017,'Megan','Wallace'),"
-                    + "(123123018,'Andrew','Peake'),"
-                    + "(123123019,'Amy','Young'),"
-                    + "(123123020,'Simon','Hill');";
+                    + "(123001,'Ganesh','Vispute'),"
+                    + "(123002,'Vishal','Wanve'),"
+                    + "(123003,'Joshep','Jones'),"
+                    + "(123004,'Abhishek','Palve'),"
+                    + "(123005,'Atharva','Nikam'),"
+                    + "(123006,'Faraz','Khan'),"
+                    + "(123007,'Paurnima','Sali'),"
+                    + "(123008,'Rehan','Chanegaon'),"
+                    + "(123009,'Diya','Jain'),"
+                    + "(123010,'Vaishali','Patel'),"
+                    + "(123011,'Narendra','Modi'),"
+                    + "(123012,'Rahul','Gandhi'),"
+                    + "(123013,'Sabrina','Kausar'),"
+                    + "(123014,'Tushar','Bhamre'),"
+                    + "(123016,'Rutuja','Rane'),"
+                    + "(123017,'Tarak','Mehta'),"
+                    + "(123018,'Raju','Peake'),"
+                    + "(123019,'Baburao','Apte'),"
+                    + "(123020,'Mohandas','Gandhi');";
 
     /**
      * SQLite query that inserts sample marks.
      */
     public static final String INSERT_SAMPLE_MARKS =
             "INSERT INTO "+SQLITE_MARKS_TABLE+" ("+STUDENT_ID+","+MARK_LAB+","+MARK_MIDTERM+","+MARK_FINAL_EXAM+") VALUES "
-                    + "(123123001,12,30,20),"
-                    + "(123123002,28,23,40),"
-                    + "(123123003,15,16,34),"
-                    + "(123123004,10,28,20),"
-                    + "(123123005,0,23,40),"
-                    + "(123123006,30,30,40),"
-                    + "(123123007,23,null,null),"
-                    + "(123123008,25,null,null),"
-                    + "(123123009,14,null,null),"
-                    + "(123123010,null,30,40),"
-                    + "(123123011,23,29,37),"
-                    + "(123123012,12,20,23),"
-                    + "(123123013,14,15,5),"
-                    + "(123123014,27,29,26),"
-                    + "(123123016,29,30,39),"
-                    + "(123123017,25,29,38),"
-                    + "(123123018,22,27,37),"
-                    + "(123123019,20,14,36),"
-                    + "(123123020,28,23,34);";
+                    + "(123001,12,30,20),"
+                    + "(123002,28,23,40),"
+                    + "(123003,15,16,34),"
+                    + "(123004,10,28,20),"
+                    + "(123005,0,23,40),"
+                    + "(123006,30,30,40),"
+                    + "(123007,23,null,null),"
+                    + "(123008,25,null,null),"
+                    + "(123009,14,null,null),"
+                    + "(123010,null,30,40),"
+                    + "(123011,23,29,37),"
+                    + "(123012,12,20,23),"
+                    + "(123013,14,15,5),"
+                    + "(123014,27,29,26),"
+                    + "(123016,29,30,39),"
+                    + "(123017,25,29,38),"
+                    + "(123018,22,27,37),"
+                    + "(123019,20,14,36),"
+                    + "(123020,28,23,34);";
 
     /**
      * Database helper for creating and upgrading the database.
@@ -291,7 +290,7 @@ public class StudentRecordsDbAdapter {
      */
     public Cursor fetchAllStudents() {
         Cursor mCursor = mDb.query(SQLITE_STUDENT_TABLE, new String[] {STUDENT_ID, STUDENT_FIRSTNAME, STUDENT_LASTNAME},
-                null, null, null, null, null);
+                null, null, null, null, STUDENT_ID);
 
         if (mCursor != null) {
             mCursor.moveToFirst();
