@@ -29,14 +29,14 @@ public class StudentsSummaryFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.smc_student_details, container, false);
-//        Button deleteAllRecordButton = (Button) v.findViewById(R.id.deleteAllRecordButton);
-//        deleteAllRecordButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Jesus(view);
-//            }
-//        });
+        View v = inflater.inflate(R.layout.smc_students_summary, container, false);
+        Button deleteAllRecordButton = (Button) v.findViewById(R.id.deleteAllRecordButton);
+        deleteAllRecordButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Jesus();
+            }
+        });
         return inflater.inflate(R.layout.smc_students_summary, container, false);
     }
 
@@ -70,7 +70,7 @@ public class StudentsSummaryFragment extends Fragment {
 
 
 
-    public void Jesus(View v){
+    public void Jesus(){
                 ((StudentMarksCalculatorActivity) getActivity()).getDbHelper().deleteAllMarks();
                 ((StudentMarksCalculatorActivity) getActivity()).getDbHelper().deleteAllStudents();
                 getFragmentManager().popBackStackImmediate();
