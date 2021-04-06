@@ -2,7 +2,7 @@
 
 ## What I wanted to do
 
-I wanted to make an app to help manage student marks
+I wanted to make an app to help manage student marks.
 
 ## What I did
 
@@ -18,8 +18,33 @@ I wanted to make an app to help manage student marks
  - How to optimize application and handle exceptions
 
 ## Screens
-  <img src="screenshots/1.jpg"
-  alt="Home Screen Image"
+  <img src="screenshots/installed_app.jpg"
+  alt="Installed App In Drawer"
+  title="Installed App"
+  style="float: left; margin-right: 10px;"
+  width="200"/>
+  <img src="screenshots/home_screen.jpg"
+  alt="Home Screen"
   title="Home Screen"
+  style="float: left; margin-right: 10px;"
+  width="200"/>
+  <img src="screenshots/add_new_stud.jpg"
+  alt="Add New Student"
+  title="Add New Student"
+  style="float: left; margin-right: 10px;"
+  width="200"/>
+  <img src="screenshots/editing_studs.jpg"
+  alt="Editing Marks of Student"
+  title="Editing Marks of Student"
+  style="float: left; margin-right: 10px;"
+  width="200"/>
+  <img src="screenshots/summary.jpg"
+  alt="Summary of Marks of All Records"
+  title="Installed App"
+  style="float: left; margin-right: 10px;"
+  width="200"/>
+  <img src="screenshots/info.jpg"
+  alt="How to Use App"
+  title="How to Use App"
   style="float: left; margin-right: 10px;"
   width="200"/>
