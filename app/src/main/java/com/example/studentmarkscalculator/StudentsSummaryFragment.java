@@ -17,7 +17,7 @@ import java.text.DecimalFormat;
  * A Fragment that displays teh average marks of all students.
  * @author SaquibAnsari0101
  */
-public class StudentsSummaryFragment extends Fragment {
+public class StudentsSummaryFragment extends Fragment implements View.OnClickListener {
 
     /**
      * Called to have this Fragment create its user interface; Sets the layout.
@@ -31,13 +31,8 @@ public class StudentsSummaryFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.smc_students_summary, container, false);
         Button deleteAllRecordButton = (Button) v.findViewById(R.id.deleteAllRecordButton);
-        deleteAllRecordButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Jesus();
-            }
-        });
-        return inflater.inflate(R.layout.smc_students_summary, container, false);
+        deleteAllRecordButton.setOnClickListener(this);
+        return v;
     }
 
     /**
@@ -68,11 +63,14 @@ public class StudentsSummaryFragment extends Fragment {
 
     }
 
-
-
-    public void Jesus(){
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()) {
+            case R.id.deleteAllRecordButton:
                 ((StudentMarksCalculatorActivity) getActivity()).getDbHelper().deleteAllMarks();
                 ((StudentMarksCalculatorActivity) getActivity()).getDbHelper().deleteAllStudents();
                 getFragmentManager().popBackStackImmediate();
+                break;
+        }
     }
 }
